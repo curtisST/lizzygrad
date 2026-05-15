@@ -165,19 +165,24 @@
                 </div>
 
                 <div class="bg-white rounded-3xl p-8 border border-peach-100 shadow-xl shadow-peach-100/40">
-                    <form class="space-y-5" action="YOUR_FORM_ENDPOINT_HERE" method="POST">
-                        <div>
-                            <label class="block text-sm font-medium text-gray-600 mb-2">Your Name</label>
-                            <input type="text" name="name" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all">
-                        </div>
-                        <div>
-                            <label class="block text-sm font-medium text-gray-600 mb-2">Your Message</label>
-                            <textarea rows="6" name="message" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all resize-none"></textarea>
-                        </div>
-                        <button type="submit" class="w-full bg-gray-900 hover:bg-peach-400 text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 shadow-md">
-                            Send Note to Lizzy
-                        </button>
-                    </form>
+                    <form class="space-y-5" action="https://formspree.io/f/xojrgnje" method="POST">
+    
+    <input type="hidden" name="_next" value="https://www.garrettgrad.com">
+    
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <div>
+        <label class="block text-sm font-medium text-gray-600 mb-2">Your Name</label>
+        <input type="text" name="name" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all">
+    </div>
+    <div>
+        <label class="block text-sm font-medium text-gray-600 mb-2">Your Message</label>
+        <textarea rows="6" name="message" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all resize-none"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-gray-900 hover:bg-peach-400 text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 shadow-md">
+        Send Note to Lizzy
+    </button>
+</form>
 
                     <div class="mt-8 pt-6 border-t border-gray-100 text-center">
                         <p class="text-sm text-gray-500 mb-2">Having trouble with the form?</p>
