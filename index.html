@@ -3,114 +3,227 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lizzy's Graduation</title>
+    <title>Lizzy Garrett | Class of 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        blush: { 50: '#fdf2f8', 100: '#fce7f3', 200: '#fbcfe8', 300: '#f9a8d4', 400: '#f472b6' },
+                        peach: { 50: '#fff7ed', 100: '#ffedd5', 200: '#fed7aa', 300: '#fdba74', 400: '#fb923c' }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        html { scroll-behavior: smooth; }
-        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .page-section { display: none; animation: fadeIn 0.4s ease-in-out; }
+        .page-section.active { display: block; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
-<body class="bg-orange-50 text-gray-800">
+<body class="font-sans text-gray-700 bg-gradient-to-b from-peach-50 to-white min-h-screen flex flex-col selection:bg-blush-200 selection:text-gray-900">
 
-    <nav class="fixed w-full bg-white/90 backdrop-blur shadow-sm z-50">
-        <div class="max-w-5xl mx-auto px-4 py-4 flex justify-between items-center">
-            <h1 class="text-xl font-bold text-pink-400">Lizzy Garrett '26</h1>
-            <div class="space-x-6 text-sm font-medium text-gray-600">
-                <a href="#from-lizzy" class="hover:text-orange-400 transition">From Lizzy</a>
-                <a href="#growing-up" class="hover:text-orange-400 transition">Growing Up</a>
-                <a href="#senior-pictures" class="hover:text-orange-400 transition">Senior Pictures</a>
-                <a href="#support" class="hover:text-orange-400 transition">Support</a>
+    <nav class="w-full bg-white/70 backdrop-blur-md border-b border-white/50 z-50 sticky top-0">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+            <button onclick="showPage('home')" class="font-serif text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-peach-400 to-blush-400 hover:opacity-80 transition-opacity">
+                Lizzy Garrett
+            </button>
+            <div class="flex flex-wrap justify-center gap-4 md:gap-6 text-sm font-medium tracking-wide" id="nav-links">
+                <button onclick="showPage('lizzy')" class="nav-btn hover:text-peach-400 transition-colors">From Lizzy</button>
+                <button onclick="showPage('growing')" class="nav-btn hover:text-peach-400 transition-colors">Growing Up</button>
+                <button onclick="showPage('senior')" class="nav-btn hover:text-peach-400 transition-colors">Senior Pictures</button>
+                <button onclick="showPage('contact')" class="nav-btn hover:text-peach-400 transition-colors">Contact</button>
+                <button onclick="showPage('support')" class="nav-btn hover:text-peach-400 transition-colors">Support</button>
             </div>
         </div>
     </nav>
 
-    <section id="from-lizzy" class="pt-28 pb-20 px-4 max-w-4xl mx-auto">
-        <div class="bg-white rounded-2xl shadow-sm p-8 md:p-12 border-t-4 border-pink-300">
-            <h2 class="text-3xl font-bold text-pink-400 mb-6 text-center">A Note From Lizzy</h2>
-            <div class="space-y-4 text-gray-700 leading-relaxed">
-                <p>I’m graduating high school! It’s hard to believe, I feel like just last week I was 14 just starting high school. It’s been a lot of hard work and a lot of change, but I’m really happy I made it through to the other side. I want to thank everyone for supporting me and helping me get where I am today. I am so so grateful for all of you and so appreciative of everyone who’s helped me get to where I am! All of you have made such an impact in my life, even people I have never met and who’ve supported me from afar have helped shape me so much into who I am today. So thank you for being there and thank you for supporting me!</p>
-                <p>My plan has changed a lot in the past 10 years. The earliest thing I remember “wanting to be when I grow up” is when I was 7-9, I loved animals and wanted to be a vet. When I was 12-14, I wanted to be an elementary school teacher, and at 15 I wanted to be an elementary school art teacher. When I was 16, I decided I wanted to be a mental health counselor. Now I am 17 and about to graduate, I’ve decided I want to be a licensed psychologist and help support and diagnose kids with autism. Though the specifics have changed, the main theme throughout everything I’ve ever wanted to do is helping people, and I’m glad I’ve chosen a career where I will be directly helping people.</p>
-                <p>Technically I’ve been homeschooled this last couple years, but in reality I have been taking full course loads at my local community college. Along with getting my diploma when I graduate, I will also be getting my associates degree. I’ll be two years ahead in college! While taking college classes, I have been volunteering, working, and recently I started a behavior technician course so I can hopefully get a job as an ABA therapy behavior technician after I graduate.</p>
-                <p>In the fall, I will be moving into the dorms and going to the University of North Carolina at Greensboro! I’m going to major in psychology, and I intend on continuing my education into graduate school and hopefully get a Phd! I want to focus my career around working and helping with autistic kids, and become a licensed psychologist specializing in autism.</p>
-                <p class="font-medium text-center pt-4 text-pink-400">Thank you so much again for supporting me in my journey to graduation and continuing to support me in the steps after graduation, I love you all!</p>
+    <main class="flex-grow py-12 md:py-20 px-6 w-full max-w-6xl mx-auto">
+
+        <section id="home" class="page-section active max-w-3xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-xl shadow-blush-100/50 p-8 md:p-14 border border-blush-50 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-peach-100 to-transparent rounded-bl-full opacity-50"></div>
+                <div class="text-center mb-10 relative z-10">
+                    <h1 class="font-serif text-4xl md:text-5xl text-gray-900 mb-4">Welcome to our virtual graduation party!</h1>
+                </div>
+                
+                <div class="mb-10 aspect-video bg-peach-100 rounded-2xl flex items-center justify-center text-peach-300 overflow-hidden shadow-md">
+                    Family Picture Placeholder
+                </div>
+
+                <div class="space-y-6 text-lg font-light leading-relaxed relative z-10 text-gray-700">
+                    <p>We wish nothing more than for it to have been possible to invite each and every one of you over to our house to celebrate Lizzy, but as we are all spread out across the entire continent of North America, we thought celebrating in this little corner of the internet was the next best thing! Please know if you are ever in central North Carolina you have a standing invitation.</p>
+                    <p>We are so proud of our oldest (and more than a little baffled about how we have a kiddo graduating high school already!), and we appreciate you for whatever part you may have played in her growing up, even if it was just shaping our lives so we could help shape her.</p>
+                    <p class="bg-peach-50/50 p-6 rounded-2xl border border-peach-100/50">
+                        On this website you will find <button onclick="showPage('lizzy')" class="text-peach-400 font-medium hover:text-blush-400 underline decoration-peach-200 underline-offset-4">words directly from Lizzy</button> about what she has been up to these past few years as well as what is up next, <button onclick="showPage('growing')" class="text-peach-400 font-medium hover:text-blush-400 underline decoration-peach-200 underline-offset-4">pictures from over the years</button> as well as <button onclick="showPage('senior')" class="text-peach-400 font-medium hover:text-blush-400 underline decoration-peach-200 underline-offset-4">her senior pictures</button>, a spot to <button onclick="showPage('contact')" class="text-peach-400 font-medium hover:text-blush-400 underline decoration-peach-200 underline-offset-4">contact her to send prayers and well wishes</button>, and a spot to <button onclick="showPage('support')" class="text-peach-400 font-medium hover:text-blush-400 underline decoration-peach-200 underline-offset-4">further support her</button> if you are so inclined.
+                    </p>
+                    <p>We thank you so much for your love, support and prayers for us and all of our kids, and especially Lizzy at this pivotal point in her life.</p>
+                    <div class="pt-8 text-right"><p class="font-serif italic text-2xl text-gray-900">Curtis and Amy Garrett</p></div>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="growing-up" class="py-20 bg-pink-50 px-4">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl font-bold text-orange-400 mb-10 text-center">Growing Up</h2>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <div class="aspect-square bg-orange-100 rounded-lg overflow-hidden flex items-center justify-center text-orange-300">Image Placeholder</div>
-                <div class="aspect-square bg-orange-100 rounded-lg overflow-hidden flex items-center justify-center text-orange-300">Image Placeholder</div>
-                <div class="aspect-square bg-orange-100 rounded-lg overflow-hidden flex items-center justify-center text-orange-300">Image Placeholder</div>
-                <div class="aspect-square bg-orange-100 rounded-lg overflow-hidden flex items-center justify-center text-orange-300">Image Placeholder</div>
-                <div class="aspect-square bg-orange-100 rounded-lg overflow-hidden flex items-center justify-center text-orange-300">Image Placeholder</div>
-                <div class="aspect-square bg-orange-100 rounded-lg overflow-hidden flex items-center justify-center text-orange-300">Image Placeholder</div>
+        <section id="lizzy" class="page-section max-w-4xl mx-auto">
+            <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-12 text-center">A Note From Lizzy</h2>
+            <div class="bg-white rounded-3xl shadow-xl shadow-blush-100/50 p-8 md:p-14 border border-blush-50">
+                
+                <div class="mb-10 w-full max-w-md mx-auto aspect-square bg-blush-100 rounded-2xl flex items-center justify-center text-blush-300 overflow-hidden shadow-md">
+                    Lizzy Picture Placeholder
+                </div>
+
+                <div class="space-y-6 text-lg font-light leading-relaxed">
+                    <p class="first-letter:text-5xl first-letter:font-serif first-letter:text-blush-400 first-letter:mr-3 first-letter:float-left">I’m graduating high school! It’s hard to believe, I feel like just last week I was 14 just starting high school. It’s been a lot of hard work and a lot of change, but I’m really happy I made it through to the other side. I want to thank everyone for supporting me and helping me get where I am today. I am so so grateful for all of you and so appreciative of everyone who’s helped me get to where I am! All of you have made such an impact in my life, even people I have never met and who’ve supported me from afar have helped shape me so much into who I am today. So thank you for being there and thank you for supporting me!</p>
+                    <p>My plan has changed a lot in the past 10 years. The earliest thing I remember “wanting to be when I grow up” is when I was 7-9, I loved animals and wanted to be a vet. When I was 12-14, I wanted to be an elementary school teacher, and at 15 I wanted to be an elementary school art teacher. When I was 16, I decided I wanted to be a mental health counselor. Now I am 17 and about to graduate, I’ve decided I want to be a licensed psychologist and help support and diagnose kids with autism. Though the specifics have changed, the main theme throughout everything I’ve ever wanted to do is helping people, and I’m glad I’ve chosen a career where I will be directly helping people.</p>
+                    <p>Technically I’ve been homeschooled this last couple years, but in reality I have been taking full course loads at my local community college. Along with getting my diploma when I graduate, I will also be getting my associates degree. I’ll be two years ahead in college! While taking college classes, I have been volunteering, working, and recently I started a behavior technician course so I can hopefully get a job as an ABA therapy behavior technician after I graduate.</p>
+                    <p>In the fall, I will be moving into the dorms and going to the University of North Carolina at Greensboro! I’m going to major in psychology, and I intend on continuing my education into graduate school and hopefully get a Phd! I want to focus my career around working and helping with autistic kids, and become a licensed psychologist specializing in autism.</p>
+                    <p class="font-serif italic text-2xl text-center pt-8 text-blush-400">Thank you so much again for supporting me in my journey to graduation and continuing to support me in the steps after graduation, I love you all!</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="senior-pictures" class="py-20 px-4 max-w-5xl mx-auto">
-        <h2 class="text-3xl font-bold text-pink-400 mb-10 text-center">Senior Pictures</h2>
-        
-        <div class="mb-12 max-w-3xl mx-auto rounded-xl overflow-hidden shadow-md">
-            <video controls class="w-full bg-black">
-                <source src="your-video-file.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+        <section id="growing" class="page-section">
+            <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-16 text-center">Growing Up</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-8 md:gap-12 px-4 max-w-5xl mx-auto">
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300">Image 1</div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300">Image 2</div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300">Image 3</div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300">Image 4</div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-8 md:mt-0"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300">Image 5</div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300">Image 6</div></div>
+            </div>
+        </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="aspect-[4/5] bg-pink-100 rounded-lg overflow-hidden flex items-center justify-center text-pink-300">Senior Pic Placeholder</div>
-            <div class="aspect-[4/5] bg-pink-100 rounded-lg overflow-hidden flex items-center justify-center text-pink-300">Senior Pic Placeholder</div>
-        </div>
-    </section>
+        <section id="senior" class="page-section">
+            <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-16 text-center">Senior Pictures</h2>
+            <div class="max-w-4xl mx-auto mb-16">
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white">
+                    <video controls class="w-full bg-gray-900 aspect-video object-cover">
+                        <source src="your-video-file.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400">Senior Pic 1</div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40 md:mt-12"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400">Senior Pic 2</div></div>
+            </div>
+        </section>
 
-    <section id="support" class="py-20 bg-orange-100 px-4">
-        <div class="max-w-3xl mx-auto bg-white rounded-2xl shadow-sm p-8 md:p-12 border-t-4 border-orange-300">
-            <h2 class="text-3xl font-bold text-orange-400 mb-8 text-center">Contact & Support</h2>
+        <section id="contact" class="page-section max-w-4xl mx-auto">
+            <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-12 text-center">Send Prayers & Well Wishes</h2>
             
-            <div class="grid md:grid-cols-2 gap-12">
-                <div>
-                    <h3 class="text-xl font-medium mb-4 text-gray-700">Send Lizzy a Message</h3>
-                    <form class="space-y-4" onsubmit="event.preventDefault(); alert('Form submission logic needed.');">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="aspect-[4/5] bg-peach-100 rounded-3xl flex items-center justify-center text-peach-300 overflow-hidden shadow-lg border border-white ring-4 ring-peach-50">
+                    Contact Picture Placeholder
+                </div>
+
+                <div class="bg-white rounded-3xl p-8 border border-peach-100 shadow-xl shadow-peach-100/40">
+                    <form class="space-y-5" action="YOUR_FORM_ENDPOINT_HERE" method="POST">
                         <div>
-                            <label class="block text-sm text-gray-600 mb-1">Your Name</label>
-                            <input type="text" required class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-pink-300">
+                            <label class="block text-sm font-medium text-gray-600 mb-2">Your Name</label>
+                            <input type="text" name="name" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all">
                         </div>
                         <div>
-                            <label class="block text-sm text-gray-600 mb-1">Message</label>
-                            <textarea rows="4" required class="w-full px-4 py-2 border border-gray-200 rounded-lg focus:outline-none focus:border-pink-300"></textarea>
+                            <label class="block text-sm font-medium text-gray-600 mb-2">Your Message</label>
+                            <textarea rows="6" name="message" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all resize-none"></textarea>
                         </div>
-                        <button type="submit" class="w-full bg-pink-300 hover:bg-pink-400 text-white font-medium py-2 px-4 rounded-lg transition">
-                            Send Message
+                        <button type="submit" class="w-full bg-gray-900 hover:bg-peach-400 text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 shadow-md">
+                            Send Note to Lizzy
                         </button>
                     </form>
-                </div>
 
-                <div class="flex flex-col justify-center space-y-6">
-                    <div class="text-center">
-                        <p class="text-gray-600 mb-4">Support Lizzy's next steps at UNCG!</p>
-                        <a href="https://venmo.com/u/Lizzy-Garrett-2026" target="_blank" class="inline-block w-full bg-[#008CFF] hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition text-center shadow-sm">
-                            Support via Venmo
-                        </a>
-                    </div>
-                    
-                    <div class="text-center">
-                        <p class="text-gray-600 mb-4">Registry</p>
-                        <a href="#" target="_blank" class="inline-block w-full bg-orange-300 hover:bg-orange-400 text-white font-medium py-3 px-6 rounded-lg transition text-center shadow-sm">
-                            View Gift Registry
-                        </a>
+                    <div class="mt-8 pt-6 border-t border-gray-100 text-center">
+                        <p class="text-sm text-gray-500 mb-2">Having trouble with the form?</p>
+                        <p class="text-gray-700">Email us directly at: <a href="mailto:your.email@example.com" class="text-peach-400 hover:text-blush-400 font-medium">your.email@example.com</a></p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="bg-white py-6 text-center text-gray-400 text-sm">
-        <p>Congratulations Lizzy!</p>
+        <section id="support" class="page-section max-w-4xl mx-auto">
+            <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-12 text-center">Support Lizzy's Next Steps</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-gradient-to-br from-[#008CFF]/10 to-white p-8 rounded-3xl border border-[#008CFF]/20 text-center shadow-sm">
+                    <div class="w-16 h-16 bg-[#008CFF] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-2xl">V</div>
+                    <h3 class="font-serif text-xl mb-2 text-gray-900">Venmo</h3>
+                    <p class="text-gray-500 mb-6 text-sm">Support her journey to UNCG and dorm life.</p>
+                    <a href="https://venmo.com/u/Lizzy-Garrett-2026" target="_blank" class="inline-block w-full bg-[#008CFF] hover:bg-blue-600 text-white font-medium py-4 px-6 rounded-xl transition-colors shadow-md">
+                        @Lizzy-Garrett-2026
+                    </a>
+                </div>
+
+                <div class="bg-gradient-to-br from-peach-100 to-blush-50 p-8 rounded-3xl border border-peach-200 text-center shadow-sm">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-peach-400 shadow-sm">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
+                    </div>
+                    <h3 class="font-serif text-xl mb-2 text-gray-900">Gift Registry</h3>
+                    <p class="text-gray-500 mb-6 text-sm">Help equip her for psychology studies.</p>
+                    <a href="#" target="_blank" class="inline-block w-full bg-white hover:bg-gray-50 text-gray-900 font-medium py-4 px-6 rounded-xl transition-colors shadow-sm border border-gray-200">
+                        View Registry
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-3xl border border-peach-50 shadow-xl shadow-peach-100/30">
+                <div class="text-center md:text-left md:pr-8">
+                    <h3 class="font-serif text-2xl mb-4 text-gray-800">Physical Mail</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">If you prefer to send a card or a physical gift, you can mail it to our home address.</p>
+                    <div class="bg-peach-50 p-6 rounded-2xl border border-peach-100 inline-block text-left w-full">
+                        <p class="font-medium text-gray-900">The Garrett Family</p>
+                        <p class="text-gray-700">123 Your Street Name</p>
+                        <p class="text-gray-700">City, State 12345</p>
+                    </div>
+                </div>
+                <div class="aspect-square bg-blush-100 rounded-2xl flex items-center justify-center text-blush-300 overflow-hidden shadow-md">
+                    Support Picture Placeholder
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-8 text-center mt-auto">
+        <p class="font-serif text-xl text-peach-400">Congratulations, Lizzy!</p>
+        <p class="text-gray-400 text-sm mt-1">Class of 2026</p>
     </footer>
 
+    <script>
+        function showPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('.page-section').forEach(page => {
+                page.classList.remove('active');
+            });
+            
+            // Remove active styling from all nav buttons
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.classList.remove('text-peach-400', 'border-b-2', 'border-peach-400', 'pb-1');
+            });
+
+            // Show selected section
+            document.getElementById(pageId).classList.add('active');
+            
+            // Highlight active nav button (skip if 'home' is clicked from the logo)
+            if(pageId !== 'home') {
+                const activeBtn = Array.from(document.querySelectorAll('.nav-btn')).find(btn => btn.getAttribute('onclick').includes(pageId));
+                if(activeBtn) {
+                    activeBtn.classList.add('text-peach-400', 'border-b-2', 'border-peach-400', 'pb-1');
+                }
+            }
+
+            // Scroll to top
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
