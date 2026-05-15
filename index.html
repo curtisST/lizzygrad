@@ -32,6 +32,7 @@
 </head>
 <body class="font-sans text-gray-700 bg-gradient-to-b from-peach-50 to-white min-h-screen flex flex-col selection:bg-blush-200 selection:text-gray-900">
 
+    <!-- Navigation -->
     <nav class="w-full bg-white/70 backdrop-blur-md border-b border-white/50 z-50 sticky top-0">
         <div class="max-w-6xl mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
             <button onclick="showPage('home')" class="font-serif text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-peach-400 to-blush-400 hover:opacity-80 transition-opacity">
@@ -49,8 +50,10 @@
         </div>
     </nav>
 
+    <!-- Content Area -->
     <main class="flex-grow py-12 md:py-20 px-6 w-full max-w-6xl mx-auto">
 
+        <!-- Home Page -->
         <section id="home" class="page-section active max-w-3xl mx-auto">
             <div class="bg-white rounded-3xl shadow-xl shadow-blush-100/50 p-8 md:p-14 border border-blush-50 relative overflow-hidden">
                 <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-peach-100 to-transparent rounded-bl-full opacity-50"></div>
@@ -74,10 +77,10 @@
             </div>
         </section>
 
+        <!-- From Lizzy Page -->
         <section id="lizzy" class="page-section max-w-4xl mx-auto">
             <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-12 text-center">A Note From Lizzy</h2>
             <div class="bg-white rounded-3xl shadow-xl shadow-blush-100/50 p-8 md:p-14 border border-blush-50">
-                
                 <div class="mb-10 w-full max-w-md mx-auto aspect-square bg-blush-100 rounded-2xl flex items-center justify-center text-blush-300 overflow-hidden shadow-md">
                     <img src="./images/lizzy/IMG_3258.jpeg" alt="Lizzy" class="w-full h-full object-cover">
                 </div>
@@ -92,146 +95,123 @@
             </div>
         </section>
 
+        <!-- Growing Up Page -->
         <section id="growing" class="page-section">
             <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-16 text-center">Growing Up</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-10 px-4 max-w-6xl mx-auto">
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup1.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup2.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup3.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup4.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup5.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup6.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup7.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup8.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup9.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden flex items-center justify-center text-peach-300"><img src="./images/growing-up/growingup10.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup1.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup2.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup3.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup4.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup5.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup6.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup7.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-2 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup8.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup9.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-gray-50 p-3 md:p-4 rounded-lg shadow-lg transform -rotate-1 hover:rotate-0 hover:scale-105 transition-all duration-300 border border-gray-200 mt-4 md:mt-8"><div class="aspect-square bg-peach-100 rounded overflow-hidden"><img src="./images/growing-up/growingup10.jpeg" class="w-full h-full object-cover"></div></div>
             </div>
         </section>
 
+        <!-- Senior Pictures Page -->
         <section id="senior" class="page-section">
             <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-16 text-center">Senior Pictures</h2>
-            
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior1.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior2.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior3.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior4.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior5.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior6.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior7.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior8.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior9.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior10.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior11.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior12.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior13.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior14.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior15.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior16.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/senior/senior17.jpeg" class="w-full h-full object-cover"></div></div>
+                <!-- 17 Images -->
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior1.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior2.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior3.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior4.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior5.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior6.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior7.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior8.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior9.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior10.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior11.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior12.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior13.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior14.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior15.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior16.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-3 md:p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/senior/senior17.jpeg" class="w-full h-full object-cover"></div></div>
             </div>
         </section>
 
+        <!-- Graduation Page -->
         <section id="graduation" class="page-section">
             <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-16 text-center">Graduation</h2>
             <div class="max-w-4xl mx-auto mb-16">
-    <div class="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white aspect-video bg-gray-900">
-        <iframe 
-            class="w-full h-full absolute top-0 left-0" 
-            src="https://www.youtube.com/embed/zA7W5dxKgTY?si=7FwEex45JrNYSRTx" 
-            title="Lizzy's Graduation Video" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-    </div>
-</div>
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl ring-4 ring-white aspect-video bg-gray-900">
+                    <iframe class="w-full h-full absolute top-0 left-0" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Graduation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/graduation/IMG_1401.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40 md:mt-12"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/graduation/IMG_1410.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/graduation/IMG_1438.jpeg" class="w-full h-full object-cover"></div></div>
-                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40 md:mt-12"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden flex items-center justify-center text-blush-400"><img src="./images/graduation/IMG_1440.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/graduation/IMG_1401.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40 md:mt-12"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/graduation/IMG_1410.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/graduation/IMG_1438.jpeg" class="w-full h-full object-cover"></div></div>
+                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40 md:mt-12"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/graduation/IMG_1440.jpeg" class="w-full h-full object-cover"></div></div>
+                <!-- 5th Image - Centered on last row -->
+                <div class="bg-white p-4 rounded-2xl shadow-xl shadow-blush-100/40 md:col-span-2 md:w-1/2 md:mx-auto"><div class="aspect-[4/5] bg-blush-100 rounded-xl overflow-hidden"><img src="./images/graduation/IMG_1443.jpeg" class="w-full h-full object-cover"></div></div>
             </div>
         </section>
 
+        <!-- Contact Page -->
         <section id="contact" class="page-section max-w-4xl mx-auto">
             <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-12 text-center">Send Prayers & Well Wishes</h2>
-            
             <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div class="aspect-[4/5] bg-peach-100 rounded-3xl flex items-center justify-center text-peach-300 overflow-hidden shadow-lg border border-white ring-4 ring-peach-50">
+                <div class="aspect-[4/5] bg-peach-100 rounded-3xl flex items-center justify-center overflow-hidden shadow-lg border border-white ring-4 ring-peach-50">
                     <img src="./images/contact/IMG_3728.jpeg" alt="Contact Lizzy" class="w-full h-full object-cover">
                 </div>
-
                 <div class="bg-white rounded-3xl p-8 border border-peach-100 shadow-xl shadow-peach-100/40">
-                    <form class="space-y-5" action="https://formspree.io/f/xojrgnje" method="POST">
-    
-    <input type="hidden" name="_next" value="https://www.garrettgrad.com">
-    
-    <input type="text" name="_gotcha" style="display:none" />
-
-    <div>
-        <label class="block text-sm font-medium text-gray-600 mb-2">Your Name</label>
-        <input type="text" name="name" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all">
-    </div>
-    <div>
-        <label class="block text-sm font-medium text-gray-600 mb-2">Your Message</label>
-        <textarea rows="6" name="message" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all resize-none"></textarea>
-    </div>
-    <button type="submit" class="w-full bg-gray-900 hover:bg-peach-400 text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 shadow-md">
-        Send Note to Lizzy
-    </button>
-</form>
-
-                    <div class="mt-8 pt-6 border-t border-gray-100 text-center">
-                        <p class="text-sm text-gray-500 mb-2">Having trouble with the form?</p>
-                        <p class="text-gray-700">Email us directly at: <a href="mailto:curtis.a.garrett@gmail.com" class="text-peach-400 hover:text-blush-400 font-medium">your.email@example.com</a></p>
+                    <form class="space-y-5" action="https://formspree.io/f/YOUR_ID" method="POST">
+                        <input type="hidden" name="_next" value="https://www.garrettgrad.com">
+                        <input type="text" name="_gotcha" style="display:none" />
+                        <div>
+                            <label class="block text-sm font-medium text-gray-600 mb-2">Your Name</label>
+                            <input type="text" name="name" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-600 mb-2">Your Message</label>
+                            <textarea rows="6" name="message" required class="w-full px-5 py-3 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-peach-300 focus:bg-white transition-all resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-gray-900 hover:bg-peach-400 text-white font-medium py-4 px-6 rounded-xl transition-colors duration-300 shadow-md">Send Note to Lizzy</button>
+                    </form>
+                    <div class="mt-8 pt-6 border-t border-gray-100 text-center text-sm">
+                        <p class="text-gray-700">Email directly: <a href="mailto:curtis@example.com" class="text-peach-400 hover:text-blush-400 font-medium">curtis@example.com</a></p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Support Page -->
         <section id="support" class="page-section max-w-4xl mx-auto">
             <h2 class="font-serif text-4xl md:text-5xl text-gray-900 mb-12 text-center">Support Lizzy's Next Steps</h2>
-            
             <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <div class="bg-gradient-to-br from-[#008CFF]/10 to-white p-8 rounded-3xl border border-[#008CFF]/20 text-center shadow-sm">
                     <div class="w-16 h-16 bg-[#008CFF] rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold text-2xl">V</div>
                     <h3 class="font-serif text-xl mb-2 text-gray-900">Venmo</h3>
-                    <p class="text-gray-500 mb-6 text-sm">Support her journey to UNCG and dorm life.</p>
-                    <a href="https://venmo.com/u/Lizzy-Garrett-2026" target="_blank" class="inline-block w-full bg-[#008CFF] hover:bg-blue-600 text-white font-medium py-4 px-6 rounded-xl transition-colors shadow-md">
-                        @Lizzy-Garrett-2026
-                    </a>
+                    <a href="https://venmo.com/u/Lizzy-Garrett-2026" target="_blank" class="inline-block w-full bg-[#008CFF] hover:bg-blue-600 text-white font-medium py-4 px-6 rounded-xl transition-colors shadow-md">@Lizzy-Garrett-2026</a>
                 </div>
-
                 <div class="bg-gradient-to-br from-peach-100 to-blush-50 p-8 rounded-3xl border border-peach-200 text-center shadow-sm">
-                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-peach-400 shadow-sm">
-                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg>
-                    </div>
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4 text-peach-400 shadow-sm"><svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"></path></svg></div>
                     <h3 class="font-serif text-xl mb-2 text-gray-900">Gift Registry</h3>
-                    <p class="text-gray-500 mb-6 text-sm">Help equip her for psychology studies.</p>
-                    <a href="https://www.amazon.com/registries/gl/guest-view/WI46ZKH33XCW?ref_=cm_sw_r_apin_ggr-subnav-share_6NDQ32ZR9YX8081JXQA6&language=en-US" target="_blank" class="inline-block w-full bg-white hover:bg-gray-50 text-gray-900 font-medium py-4 px-6 rounded-xl transition-colors shadow-sm border border-gray-200">
-                        View Registry
-                    </a>
+                    <a href="https://www.amazon.com/registries/gl/guest-view/WI46ZKH33XCW" target="_blank" class="inline-block w-full bg-white hover:bg-gray-50 text-gray-900 font-medium py-4 px-6 rounded-xl transition-colors shadow-sm border border-gray-200">View Registry</a>
                 </div>
             </div>
-
             <div class="grid md:grid-cols-2 gap-8 items-center bg-white p-8 rounded-3xl border border-peach-50 shadow-xl shadow-peach-100/30">
                 <div class="text-center md:text-left md:pr-8">
                     <h3 class="font-serif text-2xl mb-4 text-gray-800">Physical Mail</h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed"> If you prefer to send a card or a physical gift, you can mail it to our home address.</p>
-                    <div class="bg-peach-50 p-6 rounded-2xl border border-peach-100 inline-block text-left w-full">
+                    <div class="bg-peach-50 p-6 rounded-2xl border border-peach-100 text-left w-full">
                         <p class="font-medium text-gray-900">The Garrett Family</p>
-                        <p class="text-gray-700">3561 Saddle Brook Dr</p>
-                        <p class="text-gray-700">Trinity, NC 27370</p>
+                        <p class="text-gray-700">123 Your Street Name</p>
+                        <p class="text-gray-700">City, State 12345</p>
                     </div>
                 </div>
-                <div class="aspect-square bg-blush-100 rounded-2xl flex items-center justify-center text-blush-300 overflow-hidden shadow-md">
+                <div class="aspect-square bg-blush-100 rounded-2xl flex items-center justify-center overflow-hidden shadow-md">
                     <img src="./images/support/IMG_3243.jpeg" class="w-full h-full object-cover">
                 </div>
             </div>
-
         </section>
 
     </main>
@@ -243,26 +223,11 @@
 
     <script>
         function showPage(pageId) {
-            // Hide all sections
-            document.querySelectorAll('.page-section').forEach(page => {
-                page.classList.remove('active');
-            });
-            
-            // Remove active styling from all nav buttons
-            document.querySelectorAll('.nav-btn').forEach(btn => {
-                btn.classList.remove('text-peach-400', 'border-b-2', 'border-peach-400', 'pb-1');
-            });
-
-            // Show selected section
+            document.querySelectorAll('.page-section').forEach(page => page.classList.remove('active'));
+            document.querySelectorAll('.nav-btn').forEach(btn => btn.classList.remove('text-peach-400', 'border-b-2', 'border-peach-400', 'pb-1'));
             document.getElementById(pageId).classList.add('active');
-            
-            // Highlight active nav button
             const activeBtn = Array.from(document.querySelectorAll('.nav-btn')).find(btn => btn.getAttribute('onclick') === `showPage('${pageId}')`);
-            if(activeBtn) {
-                activeBtn.classList.add('text-peach-400', 'border-b-2', 'border-peach-400', 'pb-1');
-            }
-
-            // Scroll to top
+            if(activeBtn) activeBtn.classList.add('text-peach-400', 'border-b-2', 'border-peach-400', 'pb-1');
             window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
